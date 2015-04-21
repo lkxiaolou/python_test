@@ -32,3 +32,14 @@ def isprime(x):
 
 list100 = range(1, 101);
 print '1~100去掉质数:\n',filter(isprime, list100);
+
+#log打印函数运行情况
+def log(func):
+    print 'call %s()' % func.__name__;
+    return func;
+
+@log
+def say():
+     print 'hello';
+
+say();
