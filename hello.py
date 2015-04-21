@@ -19,3 +19,16 @@ def times(x, y):
     return x * y;
 print list,'求积',reduce(times, list);
 
+#利用filter()删除1-100的素数
+def isprime(x):
+    if x == 2:
+        return False;
+    if x <= 1:
+        return True;
+    for t in range(2, x):#左闭右开
+        if x % t == 0:
+            return True;
+    return False;
+
+list100 = range(1, 101);
+print '1~100去掉质数:\n',filter(isprime, list100);
