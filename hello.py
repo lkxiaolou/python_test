@@ -1,6 +1,9 @@
 #!/usr/bin/python
 #coding=utf-8
 
+'测试代码集合'
+__author__ = 'lkxiaolou'
+
 #利用map函数把用户输入的不规范的英文名字，变为首字母大写,其他小写
 #处理大小写函数
 def first_toupper(str):
